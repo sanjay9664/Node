@@ -326,16 +326,16 @@
 
 
       // **********************************************************Async  *************************************
-
-
-    //   1) 
-// console.log('a');
-
-// console.log('b');
-
-// setTimeout(() => console.log('c'), 3000)
-
-// console.log('d');
+      
+      
+      //   1) 
+      // console.log('a');
+      
+      // console.log('b');
+      
+      // setTimeout(() => console.log('c'), 3000)
+      
+      // console.log('d');
 
 // output:
 // a 
@@ -344,6 +344,18 @@
 // c 
 
 
+// **********************************************************Create server  *************************************
+
+// Create a server , run it on port 4000 and console log your name.
+// Call the server from the browser and your name would get printed.
+
+
+  const http = require("http")
+  
+  http.createServer((req, res)=>{
+    res.write("my name is sanjay gupta  : this is my first create server ")
+    res.end()
+  }).listen(4000)
 
 
 

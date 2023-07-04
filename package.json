@@ -1,0 +1,26 @@
+{
+  "name": "backedn",
+  "version": "1.0.0",
+  "description": "node first ",
+  "main": "App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjay9664/Node.git"
+  },
+  "keywords": [
+    "data"
+  ],
+  "author": "sanjay gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sanjay9664/Node/issues"
+  },
+  "homepage": "https://github.com/sanjay9664/Node#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "simple-logs": "^0.2.11"
+  }
+}

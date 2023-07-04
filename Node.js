@@ -1,13 +1,7 @@
-// console.log("Hello Word")
 
-var obj = {
-    name:"sanjay",
-    age:21,
-    class:"10th"
-}
+// const App = require('./App')
 
-var data = (val)=>{
-  console.log(val.name)
-}
-
-data()
+// console.log(App)
+// console.log(App.a)
+// console.log(App.b)
+// console.log(App.c())

@@ -301,23 +301,66 @@
 
 
   // **********************************************************Destructuring  *************************************
+  
+  //   with array 
+  
+  //   const arr = ["sanjay" ,21 ]
+  //   const[name, age] = arr
+  //   console.log(name)
+  //   console.log(age)
+  
+  
+  // with object 
+  
+  // const person = {
+      //      name:"sanjay",
+      //      age: 21
+      // }
+      
+      
+      // const {name , age} = person
+      
+      // console.log(name , age)
 
-//   with array 
-
-//   const arr = ["sanjay" ,21 ]
-//   const[name, age] = arr
-//   console.log(name)
-//   console.log(age)
 
 
-// with object 
 
-const person = {
-     name:"sanjay",
-     age: 21
-}
+      // **********************************************************Async  *************************************
 
 
-const {name , age} = person
+    //   1) 
+// console.log('a');
 
-console.log(name , age)
+// console.log('b');
+
+// setTimeout(() => console.log('c'), 3000)
+
+// console.log('d');
+
+// output:
+// a 
+// b 
+// d 
+// c 
+
+
+
+
+
+// 2) 
+// console.log('a');
+
+// console.log('b');
+
+// setTimeout(() => console.log('c'), 3000)
+
+// setTimeout(() => console.log('d'), 0)
+
+// console.log('e');
+
+// output :
+//  a
+//  b
+//  e
+//  d
+//  c 

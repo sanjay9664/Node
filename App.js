@@ -391,22 +391,13 @@
 const http = require("http")
 http.createServer((req, res)=>{
   res.setHeader("Content-Type" , "text/html");
-  res.write(`<!DOCTYPE html>
-  <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
-  </head>
-  <body>
-       <from>
-          <input type="text" placeholder="Enter your name ">
-          <input type="text" placeholder="Enter your lastName ">
-          <input type="text" placeholder="Enter your Email ">
-          <input type="number" placeholder="Enter your Number ">
-          <button>Submit</button>
-       </from>
-  </body>
-  </html>`)
+  res.write('<html>')
+  res.write('<head>')
+  res.write( '<title>')
+  res.write( '</title>')
+  res.write('</head>')
+  res.write('<body> <h1> "Welcome to my Node Js project". </h1> <a >Home </a> <a >About </a> </body>')
+
+  res.write('</html>')
   res.end();
 }).listen(3000);

@@ -83,6 +83,15 @@
 //     res.end()
 // }).listen(3000)
 
+
+// const http = require("http")
+
+// http.createServer((req, res)=>{
+//   res.writeHead(200,{"Context-type":"application/json"})
+//   res.write(JSON.stringify({name:"sanjay", age:21}))
+//   res.end()
+// }).listen(3000)
+
 // const http  = require("http")
 // const  data = require("./data")
 // http.createServer((req, res)=>{
@@ -350,12 +359,12 @@
 // Call the server from the browser and your name would get printed.
 
 
-  const http = require("http")
+  // const http = require("http")
   
-  http.createServer((req, res)=>{
-    res.write("my name is sanjay gupta  : this is my first create server ")
-    res.end()
-  }).listen(4000)
+  // http.createServer((req, res)=>{
+  //   res.write("my name is sanjay gupta  : this is my first create server ")
+  //   res.end()
+  // }).listen(4000)
 
 
 
@@ -376,3 +385,28 @@
 //  e
 //  d
 //  c 
+
+
+
+const http = require("http")
+http.createServer((req, res)=>{
+  res.setHeader("Content-Type" , "text/html");
+  res.write(`<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+  </head>
+  <body>
+       <from>
+          <input type="text" placeholder="Enter your name ">
+          <input type="text" placeholder="Enter your lastName ">
+          <input type="text" placeholder="Enter your Email ">
+          <input type="number" placeholder="Enter your Number ">
+          <button>Submit</button>
+       </from>
+  </body>
+  </html>`)
+  res.end();
+}).listen(3000);

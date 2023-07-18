@@ -404,17 +404,28 @@
 //  d
 //  c
 
- const http = require("http");
- http.createServer((req, res)=>{
-  //  const url = res.url;
-  //  if(url==='/'){
-    // res.setHeader("Content-Type" , "text/html");
-    res.write('<html>')
-    res.write('<head>')
-    res.write( '<title>')
-    res.write( '</title>')
-    res.write('</head>')
-    res.write('<body><form action="/message" method="POST"><input type="text" name="message"/><button type="submit">Send</button> </form> </body>')
-    res.write('</html>')
-    return res.end();
-   }).listen(3000);
+//  const http = require("http");
+//  http.createServer((req, res)=>{
+//   //  const url = res.url;
+//   //  if(url==='/'){
+//     // res.setHeader("Content-Type" , "text/html");
+//     res.write('<html>')
+//     res.write('<head>')
+//     res.write( '<title>')
+//     res.write( '</title>')
+//     res.write('</head>')
+//     res.write('<body><form action="/message" method="POST"><input type="text" name="message"/><button type="submit">Send</button> </form> </body>')
+//     res.write('</html>')
+//     return res.end();
+//    }).listen(3000);
+
+
+// ***********************************************************************************************************************************************************
+
+const http = require("http")
+const data = require("./data")
+http.createServer((req, res)=>{
+    res.writeHead(200,{"Content-type": "application/json"})
+    res.write(JSON.stringify(data))
+    res.end()
+}).listen(3000)

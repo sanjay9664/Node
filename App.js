@@ -10,10 +10,17 @@
 // *****************************************globly data banane ke liye aur jaise data banega waise hi dusra file ban jayega
 
 // const fs = require('fs')
-
 // console.log("code send on terminal")
-
 // fs.writeFileSync("hellow dear","send data again and again")
+
+
+// create the new file with the help of  App.js
+
+// const fs = require("fs")
+// fs.writeFileSync("hellow dear","my name is sanjay gupta") 
+
+/// jaise run karenge waise hi new file ban jayegi jaishe hellow dear aur use me my name is sanjay gupta likh ke 
+// aa jayega  
 
 // ****************************************************************************************************************
 
@@ -37,6 +44,14 @@
 // es file ka name and node   ,,,, node App.js and enter
 // go to server and open local host 3000 portal and show your output
 
+
+// const http = require("http")
+// const server = http.createServer((req, res)=>{
+//   res.write("my name is sanjay gupta")
+//   res.end()
+
+// })
+// server.listen("3000")
 // ****************************************************************************************************************
 
 // const http = require("http");
@@ -60,6 +75,9 @@
 
 // http.createServer(controller).listen(3000);
 
+
+
+
 // ****************************************************************************************************************
 
 // const colors = require("colors")
@@ -78,11 +96,27 @@
 // const http = require("http")
 // const data = require("./data")
 // http.createServer((req, res)=>{
+//   res.writeHead(200, {"Contect-Text":"application\json"})
+//   res.write(JSON.stringify(data))
+//   res.end()
+// }).listen(3000)
+
+
+// const http = require("http")
+// const data = require("./data")
+// http.createServer((req, res)=>{
 //     res.writeHead(200, {"Contect-Type":"application\json"})
 //     res.write(JSON.stringify(data))
 //     res.end()
 // }).listen(3000)
 
+// const http = require("http")
+// const data = require("./data")
+// http.createServer((req, res)=>{
+//     res.writeHead(200, {"Contect-Type":"application\json"})
+//     res.write(JSON.stringify(data))
+//     res.end()
+// }).listen(3000)
 
 // const http = require("http")
 
@@ -109,13 +143,16 @@
 //     res.end()
 // }).listen(3000)
 
+
+// ****************************************************************************************************************
 // how to create new file on vs code with help of node js
+
 
 // const fs = require("fs")
 
 // const input = process.argv
 
-// fs.writeFileSync(input[2],input[3])
+// fs.writeFileSync(input[2],input[3])    // hame run aishe karenge like  node App.js 'test.txt' ,"my name sana"
 
 // ****************************************************************************************************************
 
@@ -271,104 +308,85 @@
 // ****************************************************************************************************************
 // ****************************************************************************************************************
 
-
-
-
-
 // const array = ['apple', 'oranges' , ' ', 'mango', ' ' , 'lemon']
 
 // let data = array.map((el)=>{
 //     if(el===' '){
 //         return "empty string"
 //     }else{
-//         return el 
+//         return el
 //     }
 // })
 
 // console.log(data)
 
-
-
 // **********************************************************rest operator *************************************
-// 1) 
+// 1)
 // const obj1 = {'key1': 1}
 // const obj2 = { ...obj1}
 // if(obj2 === obj1){
-    // console.log('same objects')
-    // }
-    // else{
-        // console.log('different objects')
-        // }
-        
-        
-        
-        // 2)
-        // const obj1 = {'key1': 1 , 'key2' : 2}
-        // const obj2 = { ...obj1, key1: 1000}
-        // console.log(obj1)
-        // console.log(obj2)
+// console.log('same objects')
+// }
+// else{
+// console.log('different objects')
+// }
 
+// 2)
+// const obj1 = {'key1': 1 , 'key2' : 2}
+// const obj2 = { ...obj1, key1: 1000}
+// console.log(obj1)
+// console.log(obj2)
 
-  // **********************************************************Destructuring  *************************************
-  
-  //   with array 
-  
-  //   const arr = ["sanjay" ,21 ]
-  //   const[name, age] = arr
-  //   console.log(name)
-  //   console.log(age)
-  
-  
-  // with object 
-  
-  // const person = {
-      //      name:"sanjay",
-      //      age: 21
-      // }
-      
-      
-      // const {name , age} = person
-      
-      // console.log(name , age)
+// **********************************************************Destructuring  *************************************
 
+//   with array
 
+//   const arr = ["sanjay" ,21 ]
+//   const[name, age] = arr
+//   console.log(name)
+//   console.log(age)
 
+// with object
 
-      // **********************************************************Async  *************************************
-      
-      
-      //   1) 
-      // console.log('a');
-      
-      // console.log('b');
-      
-      // setTimeout(() => console.log('c'), 3000)
-      
-      // console.log('d');
+// const person = {
+//      name:"sanjay",
+//      age: 21
+// }
+
+// const {name , age} = person
+
+// console.log(name , age)
+
+// **********************************************************Async  *************************************
+
+//   1)
+// console.log('a');
+
+// console.log('b');
+
+// setTimeout(() => console.log('c'), 3000)
+
+// console.log('d');
 
 // output:
-// a 
-// b 
-// d 
-// c 
-
+// a
+// b
+// d
+// c
 
 // **********************************************************Create server  *************************************
 
 // Create a server , run it on port 4000 and console log your name.
 // Call the server from the browser and your name would get printed.
 
+// const http = require("http")
 
-  // const http = require("http")
-  
-  // http.createServer((req, res)=>{
-  //   res.write("my name is sanjay gupta  : this is my first create server ")
-  //   res.end()
-  // }).listen(4000)
+// http.createServer((req, res)=>{
+//   res.write("my name is sanjay gupta  : this is my first create server ")
+//   res.end()
+// }).listen(4000)
 
-
-
-// 2) 
+// 2)
 // console.log('a');
 
 // console.log('b');
@@ -384,20 +402,19 @@
 //  b
 //  e
 //  d
-//  c 
+//  c
 
-
-
-const http = require("http")
-http.createServer((req, res)=>{
-  res.setHeader("Content-Type" , "text/html");
-  res.write('<html>')
-  res.write('<head>')
-  res.write( '<title>')
-  res.write( '</title>')
-  res.write('</head>')
-  res.write('<body> <h1> "Welcome to my Node Js project". </h1> <a >Home </a> <a >About </a> </body>')
-
-  res.write('</html>')
-  res.end();
-}).listen(3000);
+ const http = require("http");
+ http.createServer((req, res)=>{
+  //  const url = res.url;
+  //  if(url==='/'){
+    // res.setHeader("Content-Type" , "text/html");
+    res.write('<html>')
+    res.write('<head>')
+    res.write( '<title>')
+    res.write( '</title>')
+    res.write('</head>')
+    res.write('<body><form action="/message" method="POST"><input type="text" name="message"/><button type="submit">Send</button> </form> </body>')
+    res.write('</html>')
+    return res.end();
+   }).listen(3000);
